@@ -1,0 +1,525 @@
+doctype html
+html(prefix="og: http://ogp.me/ns#")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='shortcut icon' href='#' type='image/x-icon')
+        title Poll
+
+body
+    .loader
+        img(src="//nexfit.me/kuwait/img/loader.gif").loader__img
+
+    header.header-poll
+        .header-poll__content
+            a(href="/").header-poll__logo-container
+                img(src="https://fitintimebahrain.com/wp-content/uploads/payment/Logo-Fit-In-Time-red.png").header-poll__logo-img
+            a(href="https://www.instagram.com/fitintimebahrain/").header-poll__instagram-container
+                img(src="https://www.fitintimebahrain.com/wp-content/uploads/homeinsta.png").header-poll__instagram-logo
+                .header-poll__instagram @fitintimebahrain
+
+    main.main-poll
+        .choice-poll.section-poll
+            .choice-poll__item.choice-poll__first-item.trial
+                | Trial Session
+            .choice-poll__item.choice-poll__second-item.membership
+                | Membership
+        form(autocomplete="off").form-poll.membership-form
+            section.section-poll
+                .section-poll__title What comes to your mind when you hear the word "fitness"?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="first-question[]" id="Achieving-goals" value="Achieving goals").fields-poll__box
+                            label(for="Achieving-goals").fields-poll__name-box Achieving goals
+                        .fields-poll__field
+                            input(type="checkbox" name="first-question[]" id="Health" value="Health").fields-poll__box
+                            label(for="Health").fields-poll__name-box Health
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="first-question[]" id="esteem" value="Self-esteem").fields-poll__box
+                            label(for="esteem").fields-poll__name-box Self-esteem
+                        .fields-poll__field
+                            input(type="checkbox" name="first-question[]" id="body" value="Ideal body shape").fields-poll__box
+                            label(for="body").fields-poll__name-box Ideal body shape
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="first-question[]" id="Communication" value="Communication with interesting people").fields-poll__box
+                            label(for="Communication").fields-poll__name-box Communication with interesting people
+                        .fields-poll__field
+                            input(type="checkbox" name="first-question[]" id="Entertainment" value="Entertainment").fields-poll__box
+                            label(for="Entertainment").fields-poll__name-box Entertainment
+                .text-field-container
+                    label(for="text-field-first-block").text-field-container__name Other:
+                    input(type="text" name="text-field-first-question" id="text-field-first-block" placeholder="Type your reply").text-field-container__field
+
+            section.poll-image-container
+                img(src="../img/poll-first-training.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title What do you look for when trying to find a good gym?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="good-reputation" value="Well known and has a good reputation").fields-poll__box
+                            label(for="good-reputation").fields-poll__name-box Well known and has a good
+                                br
+                                | reputation
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="trainers" value="Certified trainers").fields-poll__box
+                            label(for="trainers").fields-poll__name-box Certified trainers
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="group-packages" value="Group membership packages").fields-poll__box
+                            label(for="group-packages").fields-poll__name-box Group membership packages
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="fitness-equipment" value="Clean fitness equipment").fields-poll__box
+                            label(for="fitness-equipment").fields-poll__name-box Clean fitness equipment
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="Affordable-price" value="Affordable price").fields-poll__box
+                            label(for="Affordable-price").fields-poll__name-box Affordable price
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="quality-service" value="High quality service").fields-poll__box
+                            label(for="quality-service").fields-poll__name-box High quality service
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="location" value="Convenient location (close to your home or work)").fields-poll__box
+                            label(for="location").fields-poll__name-box Convenient location
+                                br
+                                | (close to your home or work)
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="number-events" value="Large number of events: workshops, competitions, seminars").fields-poll__box
+                            label(for="number-events").fields-poll__name-box Large number of events: workshops, seminars, competitions
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="second-question[]" id="atmosphere" value="Enthusiastic atmosphere").fields-poll__box
+                            label(for="atmosphere").fields-poll__name-box Enthusiastic atmosphere
+                .text-field-container
+                    label(for="text-field-second-block").text-field-container__name Other:
+                    input(type="text" name="text-field-second-question" id="text-field-second-block" placeholder="Type your reply").text-field-container__field
+
+            section.poll-image-container
+                img(src="../img/poll-second-training.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title What do you think is necessary to change or add to our gym
+                    br
+                    | that will make you more satisfied of attending our sessions?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            textarea(name="text-field-third-question" rows="4" placeholder="Type your reply").text-field-container__field.text-field-container__field--textarea
+                .section-poll__title What is the payment plan do you think the most suitable for you?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row.fields-poll__row--peer
+                        .fields-poll__field.fields-poll__field--peer
+                            input(type="radio" name="third-question" id="Monthly-payment-plan" value="Monthly payment plan").fields-poll__box
+                            label(for="Monthly-payment-plan").fields-poll__name-box Monthly payment plan
+                        .fields-poll__field.fields-poll__field--peer
+                            input(type="radio" name="third-question" id="Yearly-payment-plan" value="Yearly payment plan").fields-poll__box
+                            label(for="Yearly-payment-plan").fields-poll__name-box Yearly payment plan
+                        .fields-poll__field.fields-poll__field--peer
+                            input(type="radio" name="third-question" id="Installment-plan" value="Installment plan").fields-poll__box
+                            label(for="Installment-plan").fields-poll__name-box Installment plan
+
+            section.poll-image-container
+                img(src="../img/poll-third-training.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title What areas of fitness are you interested in?
+                    br
+                    | And which one do you think we should add to our list of services?
+                .section-poll__fields-container.types-fitness
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="gymnastics" value="GYMNASTICS").types-fitness__box
+                        label(for="gymnastics").types-fitness__name-box.types-fitness__first-container
+                            .types-fitness__title GYMNASTICS
+                            .types-fitness__text Is a sport that includes exercises that require balance, strength, flexibility, dexterity, coordination and endurance. The movements involved in gymnastics promote the development of muscle groups of the arms, legs, shoulders, back, chest and abdomen.
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="body-dump" value="BODY PUMP").types-fitness__box
+                        label(for="body-dump").types-fitness__name-box.types-fitness__second-container.types-fitness__container
+                            .types-fitness__title BODY PUMP
+                            .types-fitness__text Is a technique of strength training in fitness, special aerobics, focused on burning fat and increasing the level of physical fitness, accompanied by rhythmic music.
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="stretching" value="STRETCHING").types-fitness__box
+                        label(for="stretching").types-fitness__name-box.types-fitness__third-container.types-fitness__container
+                            .types-fitness__title STRETCHING
+                            .types-fitness__text Is a subspecies of fitness, which is a set of exercises that promote stretching of muscles and ligaments of the body. The name "stretching" is derived from the English word stretch, meaning pull, stretch.
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="yoga" value="YOGA").types-fitness__box
+                        label(for="yoga").types-fitness__name-box.types-fitness__fourth-container.types-fitness__container
+                            .types-fitness__title YOGA
+                            .types-fitness__text In a broad sense, meaning a combination of various spiritual, mental and physical practices developed in different directions.
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="enegry-yoga" value="ENERGY YOGA").types-fitness__box
+                        label(for="enegry-yoga").types-fitness__name-box.types-fitness__fifth-container.types-fitness__container
+                            .types-fitness__title ENERGY YOGA
+                            .types-fitness__text The training is aimed at developing flexibility, dexterity, coordination abilities, it is maximally adapted so that it can be visited by practitioners of all levels of fitness.
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="functional-training" value="FUNCTIONAL TRAINING").types-fitness__box
+                        label(for="functional-training").types-fitness__name-box.types-fitness__sixth-container.types-fitness__container
+                            .types-fitness__title FUNCTIONAL TRAINING
+                            .types-fitness__text A unique training program. One of the most energy-intensive activities, which develops all the basic motor qualities of a person. Using diverse equipment in the form of unstable platforms and surfaces, a variety of free weights and shock absorbers help you to perform this workout as effective as possible.
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="cardio-workout" value="CARDIO WORKOUT").types-fitness__box
+                        label(for="cardio-workout").types-fitness__name-box.types-fitness__seventh-container.types-fitness__container
+                            .types-fitness__title CARDIO WORKOUT
+                            .types-fitness__text Is a group of exercise makes your heart strong. It increases your lung capacity and helps you burn fat and calories for weight loss. It helps reduce your risk of heart attack.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="abs" value="ABS").types-fitness__box
+                        label(for="abs").types-fitness__name-box.types-fitness__eighth-container.types-fitness__container
+                            .types-fitness__title ABS
+                            .types-fitness__text Is a group of exercise makes your heart strong. It increases your lung capacity and helps you burn fat and calories for weight loss. It helps reduce your risk of heart attack.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="zumba" value="ZUMBA").types-fitness__box
+                        label(for="zumba").types-fitness__name-box.types-fitness__ninth-container.types-fitness__container
+                            .types-fitness__title ZUMBA
+                            .types-fitness__text Is a dance can help you to burn calories, build endurance, improve cardiovascular fitness and blood pressure. It’s fun and adaptable for any fitness level.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="pilates" value="PILATES").types-fitness__box
+                        label(for="pilates").types-fitness__name-box.types-fitness__tenth-container.types-fitness__container
+                            .types-fitness__title PILATES
+                            .types-fitness__text Is a physical fitness system uses special apparatus, designed to improve physical strength, flexibility, and posture, and enhance mental awareness.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="belly-dance" value="BELLY DANCE").types-fitness__box
+                        label(for="belly-dance").types-fitness__name-box.types-fitness__eleventh-container.types-fitness__container
+                            .types-fitness__title BELLY DANCE
+                            .types-fitness__text Is a group of movements can help you to strengthen your bones and muscles, lose weight, improve posture, aid digestion and reduce the stress.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="fourth-question[]" id="resistance-exercise" value="TRX OR TOTAL BODY RESISTANCE EXERCISE").types-fitness__box
+                        label(for="resistance-exercise").types-fitness__name-box.types-fitness__twelve-container.types-fitness__container
+                            .types-fitness__title TRX or Total Body
+                                br
+                                | Resistance Exercise
+                            .types-fitness__text is a full-body strength workout that utilizes gravity and a person's own body weight instead of relying on machines or dumbbells. It can help you to lose fat, improve endurance, build strength, balance, coordination, flexibility, core and joint stability.
+
+            section.section-poll
+                .section-poll__title Would you be interested in attending group EMS fitness classes at a lower price?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row.fields-poll__row--left
+                        .fields-poll__field.fields-poll__field--left
+                            input(type="radio" name="fifth-question" id="yes-interest" value="Yes").fields-poll__box.fields-poll__box--radio
+                            label(for="yes-interest").fields-poll__name-box.fields-poll__name-box--sub Yes
+                        .fields-poll__field.fields-poll__field--left
+                            input(type="radio" name="fifth-question" id="no-interest" value="No").fields-poll__box.fields-poll__box--radio
+                            label(for="no-interest").fields-poll__name-box.fields-poll__name-box--unactive.fields-poll__name-box--sub No
+                    .text-field-container.text-field-container--for-radio
+                        label(for="text-field-fifth-block").text-field-container__name Other:
+                        input(type="text" name="fifth-other-question" id="text-field-fifth-block" placeholder="Type your reply").text-field-container__field.text-field-container__field--for-radio
+
+            section.poll-image-container
+                img(src="../img/poll-fifth-training.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title WHAT MADE YOU choose EMS Fitness Training?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            textarea(name="sixth-question" rows="4" placeholder="Type your reply").text-field-container__field.text-field-container__field--textarea
+                .section-poll__title Would you recommend us to your family and friends?
+                    .section-poll__fields-container.fields-poll
+                        .fields-poll__row
+                            .fields-poll__field
+                                textarea(name="seventh-question" rows="4" placeholder="Type your reply").text-field-container__field.text-field-container__field--textarea
+
+            section.section-poll
+                button.has-spinner.section-poll__submit(type="submit", value="Submit") Submit
+
+        form(autocomplete="off").form-poll.trial-form
+            section.section-poll
+                .section-poll__title What fitness goals are you striving to achieve with EMS?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-first-question[]" id="general-fitness" value="General Fitness").fields-poll__box
+                            label(for="general-fitness").fields-poll__name-box General Fitness
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-first-question[]" id="body-toning" value="Body Toning").fields-poll__box
+                            label(for="body-toning").fields-poll__name-box Body Toning
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-first-question[]" id="weight-loss" value="Weight-loss").fields-poll__box
+                            label(for="weight-loss").fields-poll__name-box Weight-loss
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-first-question[]" id="build-endurance" value="Build Endurance").fields-poll__box
+                            label(for="build-endurance").fields-poll__name-box Build Endurance
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-first-question[]" id="muscle-growth" value="Muscle Growth").fields-poll__box
+                            label(for="muscle-growth").fields-poll__name-box Muscle Growth
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-first-question[]" id="general-health" value="General Health (reduce joint pains, etc)").fields-poll__box
+                            label(for="general-health").fields-poll__name-box General Health
+                                br
+                                | (reduce joint pains, etc)
+                .text-field-container
+                    label(for="trial-first-text").text-field-container__name Other:
+                    input(type="text" name="trial-first-text" id="trial-first-text" placeholder="Type your reply").text-field-container__field
+
+            section.section-poll.section-slider
+                .section-poll__title On a scale of 1 (Minimal) to 10 (Helped Greatly), how would you rate Fitintime’s contribution to you achieving your above-stated goals?
+                .section-poll__fields-container.fields-poll
+                    input#ex1(type='text' name="trial-second-question" data-slider-min='0' data-slider-max='10' data-slider-step='1' data-slider-value='5')
+
+            section.poll-image-container
+                img(src="../img/arabic-women.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title Outside of gym, what fitness activities do you indulge in at least on a monthly basis?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-third-question[]" id="swimming" value="Swimming").fields-poll__box
+                            label(for="swimming").fields-poll__name-box Swimming
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-third-question[]" id="hiking-trekking" value="Hiking/Trekking").fields-poll__box
+                            label(for="hiking-trekking").fields-poll__name-box Hiking/Trekking
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-third-question[]" id="jogging" value="Jogging").fields-poll__box
+                            label(for="jogging").fields-poll__name-box Jogging
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-third-question[]" id="kayaking-water" value="Kayaking/Water Activities").fields-poll__box
+                            label(for="kayaking-water").fields-poll__name-box Kayaking/Water Activities
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-third-question[]" id="sport" value="Sport").fields-poll__box
+                            label(for="sport").fields-poll__name-box Sport
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-third-question[]" id="trial-yoga-gym" value="Yoga").fields-poll__box
+                            label(for="trial-yoga-gym").fields-poll__name-box Yoga
+                .text-field-container
+                    label(for="trial-third-text").text-field-container__name Other:
+                    input(type="text" name="trial-third-text" id="trial-third-text" placeholder="Type your reply").text-field-container__field
+
+            section.section-poll
+                .section-poll__title How much weekly time are you able to dedicate to keeping fit?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fourth-question[]" id="one-hour-or-less" value="1 Hour or less").fields-poll__box
+                            label(for="one-hour-or-less").fields-poll__name-box 1 Hour or less
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fourth-question[]" id="4-and-7-hours" value="Between 4 Hours and 7 Hours").fields-poll__box
+                            label(for="4-and-7-hours").fields-poll__name-box Between 4 Hours and 7 Hours
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fourth-question[]" id="1-and-7-hours" value="Between 1 Hour and 7 Hours").fields-poll__box
+                            label(for="1-and-7-hours").fields-poll__name-box Between 1 Hour and 4 Hours
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fourth-question[]" id="more-than-7-hours" value="More than 7 Hours").fields-poll__box
+                            label(for="more-than-7-hours").fields-poll__name-box More than 7 Hours
+
+            section.section-poll
+                .section-poll__title What comes to your mind when you hear the phrase "ems fitness"?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fifth-question[]" id="trial-achieving-goals" value="Achieving goals").fields-poll__box
+                            label(for="trial-achieving-goals").fields-poll__name-box Achieving goals
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fifth-question[]" id="trial-health" value="Health").fields-poll__box
+                            label(for="trial-health").fields-poll__name-box Health
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fifth-question[]" id="trial-esteem" value="Self-esteem").fields-poll__box
+                            label(for="trial-esteem").fields-poll__name-box Self-esteem
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fifth-question[]" id="trial-body" value="Ideal body shape").fields-poll__box
+                            label(for="trial-body").fields-poll__name-box Ideal body shape
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fifth-question[]" id="trial-communication" value="Communication with interesting people").fields-poll__box
+                            label(for="trial-communication").fields-poll__name-box Communication with interesting people
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-fifth-question[]" id="trial-entertainment" value="Entertainment").fields-poll__box
+                            label(for="trial-entertainment").fields-poll__name-box Entertainment
+                .text-field-container
+                    label(for="trial-fifth-text").text-field-container__name Other:
+                    input(type="text" name="trial-fifth-text" id="trial-fifth-text" placeholder="Type your reply").text-field-container__field
+
+            section.poll-image-container
+                img(src="../img/woman-training.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title What do you look for when trying to find a good fitness solution?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-efficient-solution" value="Effective and time-efficient solution").fields-poll__box
+                            label(for="trial-efficient-solution").fields-poll__name-box Effective and time-efficient solution
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-good-reputation" value="Well known and has a good reputation").fields-poll__box
+                            label(for="trial-good-reputation").fields-poll__name-box Well known and has a good reputation
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-trainers" value="Certified trainers").fields-poll__box
+                            label(for="trial-trainers").fields-poll__name-box Certified trainers
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-group-packages" value="Group membership packages").fields-poll__box
+                            label(for="trial-group-packages").fields-poll__name-box Group membership packages
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-fitness-equipment" value="Clean fitness equipment").fields-poll__box
+                            label(for="trial-fitness-equipment").fields-poll__name-box Clean fitness equipment
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-affordable-price" value="Affordable price").fields-poll__box
+                            label(for="trial-affordable-price").fields-poll__name-box Affordable price
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-quality-service" value="High quality service").fields-poll__box
+                            label(for="trial-quality-service").fields-poll__name-box High quality service
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-location" value="Convenient location (close to your home or work)").fields-poll__box
+                            label(for="trial-location").fields-poll__name-box Convenient location
+                                br
+                                | (close to your home or work)
+                    .fields-poll__row
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-number-events" value="Large number of events: workshops, competitions, seminars").fields-poll__box
+                            label(for="trial-number-events").fields-poll__name-box Large number of events: workshops, seminars, competitions
+                        .fields-poll__field
+                            input(type="checkbox" name="trial-sixth-question[]" id="trial-atmosphere" value="Enthusiastic atmosphere").fields-poll__box
+                            label(for="trial-atmosphere").fields-poll__name-box Enthusiastic atmosphere
+                .text-field-container
+                    label(for="trial-sixth-text").text-field-container__name Other:
+                    input(type="text" name="trial-sixth-text" id="trial-sixth-text" placeholder="Type your reply").text-field-container__field
+
+            section.poll-image-container
+                img(src="../img/poll-second-training.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title What do you think is necessary to change or add to our service
+                    br
+                    | that will make you more satisfied of attending our sessions?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            textarea(name="trial-seventh-question" rows="4" placeholder="Type your reply").text-field-container__field.text-field-container__field--textarea
+                .section-poll__title What is the payment plan do you think the most suitable for you?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row.fields-poll__row--peer
+                        .fields-poll__field.fields-poll__field--peer
+                            input(type="radio" name="trial-eighth-question" id="trial-monthly-payment-plan" value="Monthly payment plan").fields-poll__box
+                            label(for="trial-monthly-payment-plan").fields-poll__name-box Monthly payment plan
+                        .fields-poll__field.fields-poll__field--peer
+                            input(type="radio" name="trial-eighth-question" id="trial-yearly-payment-plan" value="Yearly payment plan").fields-poll__box
+                            label(for="trial-yearly-payment-plan").fields-poll__name-box Yearly payment plan
+                        .fields-poll__field.fields-poll__field--peer
+                            input(type="radio" name="trial-eighth-question" id="trial-installment-plan" value="Installment plan").fields-poll__box
+                            label(for="trial-installment-plan").fields-poll__name-box Installment plan
+
+            section.poll-image-container
+                img(src="../img/poll-third-training.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title What areas of fitness are you interested in?
+                    br
+                    | And which one do you think we should add to our list of services?
+                .section-poll__fields-container.types-fitness
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-gymnastics" value="GYMNASTICS").types-fitness__box
+                        label(for="trial-gymnastics").types-fitness__name-box.types-fitness__first-container
+                            .types-fitness__title GYMNASTICS
+                            .types-fitness__text Is a sport that includes exercises that require balance, strength, flexibility, dexterity, coordination and endurance. The movements involved in gymnastics promote the development of muscle groups of the arms, legs, shoulders, back, chest and abdomen.
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-body-dump" value="BODY PUMP").types-fitness__box
+                        label(for="trial-body-dump").types-fitness__name-box.types-fitness__second-container.types-fitness__container
+                            .types-fitness__title BODY PUMP
+                            .types-fitness__text Is a technique of strength training in fitness, special aerobics, focused on burning fat and increasing the level of physical fitness, accompanied by rhythmic music.
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-stretching" value="STRETCHING").types-fitness__box
+                        label(for="trial-stretching").types-fitness__name-box.types-fitness__third-container.types-fitness__container
+                            .types-fitness__title STRETCHING
+                            .types-fitness__text Is a subspecies of fitness, which is a set of exercises that promote stretching of muscles and ligaments of the body. The name "stretching" is derived from the English word stretch, meaning pull, stretch.
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-yoga" value="YOGA").types-fitness__box
+                        label(for="trial-yoga").types-fitness__name-box.types-fitness__fourth-container.types-fitness__container
+                            .types-fitness__title YOGA
+                            .types-fitness__text In a broad sense, meaning a combination of various spiritual, mental and physical practices developed in different directions.
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-enegry-yoga" value="ENERGY YOGA").types-fitness__box
+                        label(for="trial-enegry-yoga").types-fitness__name-box.types-fitness__fifth-container.types-fitness__container
+                            .types-fitness__title ENERGY YOGA
+                            .types-fitness__text The training is aimed at developing flexibility, dexterity, coordination abilities, it is maximally adapted so that it can be visited by practitioners of all levels of fitness.
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-functional-training" value="FUNCTIONAL TRAINING").types-fitness__box
+                        label(for="trial-functional-training").types-fitness__name-box.types-fitness__sixth-container.types-fitness__container
+                            .types-fitness__title FUNCTIONAL TRAINING
+                            .types-fitness__text A unique training program. One of the most energy-intensive activities, which develops all the basic motor qualities of a person. Using diverse equipment in the form of unstable platforms and surfaces, a variety of free weights and shock absorbers help you to perform this workout as effective as possible.
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-cardio-workout" value="CARDIO WORKOUT").types-fitness__box
+                        label(for="trial-cardio-workout").types-fitness__name-box.types-fitness__seventh-container.types-fitness__container
+                            .types-fitness__title CARDIO WORKOUT
+                            .types-fitness__text Is a group of exercise makes your heart strong. It increases your lung capacity and helps you burn fat and calories for weight loss. It helps reduce your risk of heart attack.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-abs" value="ABS").types-fitness__box
+                        label(for="trial-abs").types-fitness__name-box.types-fitness__eighth-container.types-fitness__container
+                            .types-fitness__title ABS
+                            .types-fitness__text Is a group of exercise makes your heart strong. It increases your lung capacity and helps you burn fat and calories for weight loss. It helps reduce your risk of heart attack.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-zumba" value="ZUMBA").types-fitness__box
+                        label(for="trial-zumba").types-fitness__name-box.types-fitness__ninth-container.types-fitness__container
+                            .types-fitness__title ZUMBA
+                            .types-fitness__text Is a dance can help you to burn calories, build endurance, improve cardiovascular fitness and blood pressure. It’s fun and adaptable for any fitness level.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-pilates" value="PILATES").types-fitness__box
+                        label(for="trial-pilates").types-fitness__name-box.types-fitness__tenth-container.types-fitness__container
+                            .types-fitness__title PILATES
+                            .types-fitness__text Is a physical fitness system uses special apparatus, designed to improve physical strength, flexibility, and posture, and enhance mental awareness.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-belly-dance" value="BELLY DANCE").types-fitness__box
+                        label(for="trial-belly-dance").types-fitness__name-box.types-fitness__eleventh-container.types-fitness__container
+                            .types-fitness__title BELLY DANCE
+                            .types-fitness__text Is a group of movements can help you to strengthen your bones and muscles, lose weight, improve posture, aid digestion and reduce the stress.
+
+                    .types-fitness__field
+                        input(type="checkbox" name="trial-ninth-question[]" id="trial-resistance-exercise" value="TRX OR TOTAL BODY RESISTANCE EXERCISE").types-fitness__box
+                        label(for="trial-resistance-exercise").types-fitness__name-box.types-fitness__twelve-container.types-fitness__container
+                            .types-fitness__title TRX or Total Body
+                                br
+                                | Resistance Exercise
+                            .types-fitness__text is a full-body strength workout that utilizes gravity and a person's own body weight instead of relying on machines or dumbbells. It can help you to lose fat, improve endurance, build strength, balance, coordination, flexibility, core and joint stability.
+
+            section.section-poll
+                .section-poll__title Would you be interested in attending group EMS fitness classes at a lower price?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row.fields-poll__row--left
+                        .fields-poll__field.fields-poll__field--left
+                            input(type="radio" name="trial-tenth-question" id="trial-yes-interest" value="Yes").fields-poll__box.fields-poll__box--radio
+                            label(for="trial-yes-interest").fields-poll__name-box.fields-poll__name-box--sub Yes
+                        .fields-poll__field.fields-poll__field--left
+                            input(type="radio" name="trial-tenth-question" id="trial-no-interest" value="No").fields-poll__box.fields-poll__box--radio
+                            label(for="trial-no-interest").fields-poll__name-box.fields-poll__name-box--unactive.fields-poll__name-box--sub No
+                    .text-field-container.text-field-container--for-radio
+                        label(for="trial-tenth-text").text-field-container__name Other:
+                        input(type="text" name="trial-tenth-text" id="trial-tenth-text" placeholder="Type your reply").text-field-container__field.text-field-container__field--for-radio
+
+            section.poll-image-container
+                img(src="../img/poll-fifth-training.png").poll-image-container__image
+
+            section.section-poll
+                .section-poll__title What makes you choose EMS Fitness Training?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            textarea(name="trial-eleventh-question" rows="4" placeholder="Type your reply").text-field-container__field.text-field-container__field--textarea
+
+                .section-poll__title Would you recommend us to your family and friends?
+                .section-poll__fields-container.fields-poll
+                    .fields-poll__row
+                        .fields-poll__field
+                            textarea(name="trial-twelve-question" rows="4" placeholder="Type your reply").text-field-container__field.text-field-container__field--textarea
+
+            section.section-poll
+                button.has-spinner.section-poll__submit(type="submit", value="Submit") Submit
