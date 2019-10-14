@@ -6,8 +6,8 @@
  * Time: 22:05
  */
 
-//https://docs.google.com/forms/d/1NHOmGFHzEkK5wXh5y27QCYLGD2t9wxOASeQAcMwmjBs/edit#responses
-//https://docs.google.com/forms/d/1sk1Qhatj3utbATRk6cIKgHBeJo1Omevzk9lPhinGLjk/edit#response=ACYDBNhMrXpFJj8t9AGda_vB4IIaDgeoIj_LkdOlASkM0iIJx3c0thHut0vz7za-yz8DC-A
+//https://docs.google.com/forms/d/e/1FAIpQLSdrk-y1LeUfPU8knzNxTPEG9_HVhSNoOFFK7yDDY9JasU9eCw/viewform
+//https://docs.google.com/forms/d/e/1FAIpQLSccyfXTiJtIFCJKcguoYHYaI1GKPiYQtI30hBK2L7xmKRx4KQ/viewform
 
 header('Access-Control-Allow-Origin: *');
 
